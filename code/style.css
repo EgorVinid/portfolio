@@ -1,0 +1,80 @@
+body {
+	font-family: 'Kaisei Tokumin', Arial, serif;;
+	font-size: 16px;
+	background-color: gray;
+}
+
+h1, .hi {
+	line-height: 10px;
+}
+dt {
+	margin: 10px;	
+}
+.row:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.row {
+	display: inline-block;
+}
+* html .row {
+	height: 1%;
+}
+.row {
+	display: block;
+}
+header {
+	text-align: left;
+	background-image: url("../img/asfalt-dark.png");
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+	margin-bottom: 10px;
+	margin-top: 0;
+	max-height: 150px;
+}
+
+nav {
+	margin: 30px;
+	border-bottom: 2px dotted blue;
+	
+}
+
+main {
+}
+
+.left {
+	border: 1px solid red;
+	float:  left;
+	width: 14%;
+}
+
+.right {
+	border: 1px solid blue;
+	float: left;
+	width: 16.5%;
+}
+.content {
+	border: 1px solid green;
+	float: left;
+	width: 69%;
+	min-height: 1000px;
+}
+
+.fot {
+	border: 1px solid black;
+	margin-top: 10px;
+	background-color: azure;
+}
+div.hard, div.soft {
+	float: left;
+	width: 50%;
+}
+
+.lorem {
+	border: 1px solid black;
+}
