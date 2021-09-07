@@ -1,7 +1,8 @@
 body {
 	font-family: 'Kaisei Tokumin', Arial, serif;;
 	font-size: 16px;
-	background-color: gray;
+	background-color: black;
+	color: white;
 }
 
 h1, .hi {
@@ -10,6 +11,18 @@ h1, .hi {
 dt {
 	margin: 10px;	
 }
+ul {
+	list-style: none;
+}
+li.navi {
+	border-left: 20px solid purple;
+	margin-bottom: 20px;
+  padding-left: 20px;
+}
+ol {
+	list-style: upper-roman;
+}
+
 .row:after {
 	visibility: hidden;
 	display: block;
@@ -27,8 +40,23 @@ dt {
 .row {
 	display: block;
 }
+a:link {
+	text-decoration: none;
+	color: rgb(105,105,105);
+}
+
+a:visited {
+	text-decoration: underline;
+	text-decoration-color: white;
+	color: white;
+}
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: dimgrey;
+	color: blanchedalmond;
+}
 header {
-	text-align: left;
+	text-align:center;
 	background-image: url("../img/asfalt-dark.png");
 	background-color: black;
 	border: 2px solid white;
@@ -48,33 +76,41 @@ main {
 }
 
 .left {
-	border: 1px solid red;
+	border-right: 2px solid white;
 	float:  left;
 	width: 14%;
+	min-height: 1000px;
 }
 
 .right {
-	border: 1px solid blue;
+	border-left: 2px solid white;
 	float: left;
 	width: 16.5%;
+	min-height: 1000px;
 }
 .content {
-	border: 1px solid green;
 	float: left;
 	width: 69%;
 	min-height: 1000px;
 }
 
 .fot {
-	border: 1px solid black;
+	border-top: 2px solid white;
 	margin-top: 10px;
-	background-color: azure;
 }
 div.hard, div.soft {
 	float: left;
-	width: 50%;
+	margin-left: 10px;
+	width: 48%;
+}
+.about-me {
+	margin-left: 10px;
 }
 
 .lorem {
 	border: 1px solid black;
+}
+
+.azino {
+	margin-left: 10px;
 }
