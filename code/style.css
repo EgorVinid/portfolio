@@ -1,8 +1,8 @@
 body {
 	font-family: 'Kaisei Tokumin', Arial, serif;;
 	font-size: 16px;
-	background-color: black;
-	color: white;
+	background-image: url("../img/Deep-space.jpg");
+	color: navajowhite;
 }
 
 h1, .hi {
@@ -15,7 +15,7 @@ ul {
 	list-style: none;
 }
 li.navi {
-	border-left: 20px solid purple;
+	border-left: 20px solid navajowhite;
 	margin-bottom: 20px;
   padding-left: 20px;
 }
@@ -56,61 +56,89 @@ a:hover {
 	color: blanchedalmond;
 }
 header {
+	border-radius: 50px 50px;
 	text-align:center;
-	background-image: url("../img/asfalt-dark.png");
-	background-color: black;
 	border: 2px solid white;
-	color: white;
 	margin-bottom: 10px;
 	margin-top: 0;
 	max-height: 150px;
+	overflow: hidden;
 }
 
 nav {
 	margin: 30px;
-	border-bottom: 2px dotted blue;
+	border: 2px dotted ghostwhite;
 	
 }
 
 main {
 }
 
-.left {
-	border-right: 2px solid white;
-	float:  left;
-	width: 14%;
-	min-height: 1000px;
-}
 
-.right {
-	border-left: 2px solid white;
-	float: left;
-	width: 16.5%;
-	min-height: 1000px;
-}
 .content {
-	float: left;
-	width: 69%;
+	float: center;
+	margin-left: 15%;
+	margin-right: 15%;
 	min-height: 1000px;
 }
 
 .fot {
 	border-top: 2px solid white;
-	margin-top: 10px;
+	margin-top: 20px;
+	padding-top: 10px;
 }
 div.hard, div.soft {
 	float: left;
 	margin-left: 10px;
+	margin-top: 20px;
 	width: 48%;
 }
+.hard {
+	border-right: 2px solid papayawhip;
+	margin-bottom: 20px;
+}
+.spells {
+	border: 2px solid white;
+	border-radius: 20px 20px;
+}
 .about-me {
+	margin-top: 25px;
 	margin-left: 10px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid whitesmoke;
 }
 
-.lorem {
-	border: 1px solid black;
+.portfolio {
+	padding-left: 10px;
+	border: 4px double floralwhite;
+	border-radius: 20px 20px;
 }
 
-.azino {
-	margin-left: 10px;
+#me {
+	text-decoration: underline;
+	text-decoration-color: floralwhite;
+}
+
+.labels {
+	text-shadow: 1px 1px 3px white;
+}
+
+.fot {
+	text-align: center;
+	color: white;
+}
+
+.link-git {
+	
+}
+.link-git:hover {
+	filter: invert(1);
+
+}
+
+.link-telegram {
+	filter: invert(1);
+}
+.link-telegram:hover {
+	filter: invert(0);
 }

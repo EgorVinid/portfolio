@@ -5,22 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ordinary Site</title>
 	<link rel="stylesheet" href="code/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="src/check_mark.png" type="image/x-icon">
 </head>
 <body>
 	<header>
-		<h1>Сайт-визитка Винидиктова Егора</h1>
+		<h1 class="labels">Сайт-визитка Винидиктова Егора</h1>
 		<p class="hi">Привет! здесь вы можете ознакомиться с моими навыками, перед тем как решить сотрудничать со мной</p>
 	</header>
-	<main class="row">
-	<aside class="left">
-		<p>Портфолио</p>
-		<p><a href="ikia/ikia.html" target="_blank">Сайт Магазина IKIA</a></p>
-		<p><a href="cska/cska.html" target="_blank">Сайт ЦСКА</a></p>
-	</aside>
-	
+	<main class="row">	
 	<section class="content">
 		<nav>
 			<p>Вот тут ссылочки на разные разделы сайта:</p>
@@ -30,13 +22,21 @@
 				<li class="navi"><a href="#soft">Soft Skills</a></li>
 			</ul>
 		</nav>
+		
+		<section class="portfolio">
+			<p>Портфолио</p>
+				<p><a href="ikia/ikia.html" target="_blank">Сайт Магазина IKIA</a></p>
+				<p><a href="cska/cska.html" target="_blank">Сайт ЦСКА</a></p>
+				</section>
 		<div class="about-me">
-			<h2 id="me">Обо мне:</h2>
+			<h2 id="me" class="labels">Обо мне:</h2>
 			<p>Что я могу рассказать про себя? Начинающий верстальщик, который решил попробовать свои силы в данной сфере.</p>
 		</div>
+		<div class="spells">
 		<div class="row">
+			
 		<div class="hard">
-			<h2 id="hard">Hard Skills</h2>
+			<h2 id="hard" class="labels">Hard Skills</h2>
 			<dl>
 				<dt>Основы HTML</dt>
 				<dd>Знание структурных элементов web-страницы,<br> знаю, что такое семантическая разметка и умею применять её</dd>
@@ -45,22 +45,21 @@
 			</dl>
 			<p>В данный момент я продолжаю обучение, поэтому вскоре этот раздел пополнится новыми навыками</p>
 		</div>
-		<div class="soft">
-			<h2 id="soft">Soft Skills</h2>
+		<div class="soft" >
+			<h2 id="soft" class="labels">Soft Skills</h2>
 			<ol>
 				<li>Пунктуальность - ваш заказ будет выполнен в установленные сроки</li>
 				<li>Креативное мышление</li>
 				<li>Продуктивность</li>
 			</ol>
-		</div></div>
+		</div>
+	</div></div>
 		</section>
-	<aside class="right">
-		<img class="azino" src="img/azino.jpg" alt="azino777" width="200px" height="200px">
-	</aside>
 	</main>
 	<footer>
 		<div class="fot">
-			<p>хе-хе, подвал</p>
+			<a class="link-git" href="https://github.com/EgorVinid" target="_blank" title="Я на GitHub"><img class="git" src="src/github-logo.png" alt=""></a>
+			<a class="link-telegram" href="https://t.me/walkinggg1" target="_blank" title="Я в Telegram"><img class="telegram" src="src/telegram-icon.png" alt=""></a>
 	</div>
 	</footer>
 </body>
