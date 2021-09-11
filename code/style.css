@@ -1,8 +1,12 @@
 body {
-	font-family: 'Kaisei Tokumin', Arial, serif;;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 16px;
 	background-image: url("../img/Deep-space.jpg");
+	background-size: 100%;
 	color: navajowhite;
+}
+html, body {
+	height: 100%;
 }
 
 h1, .hi {
@@ -40,15 +44,18 @@ ol {
 .row {
 	display: block;
 }
-a:link {
-	text-decoration: none;
-	color: rgb(105,105,105);
+.other-site {
+	font-size: 20px;
 }
 
 a:visited {
-	text-decoration: underline;
+	text-decoration: none;
 	text-decoration-color: white;
 	color: white;
+}
+a:link {
+	text-decoration: none;
+	color: rgb(220, 230, 245);
 }
 a:hover {
 	text-decoration: underline;
@@ -66,13 +73,14 @@ header {
 }
 
 nav {
+	padding-left: 10px;
 	margin: 30px;
 	border: 2px dotted ghostwhite;
+	border-radius: 25px 25px;
 	
 }
 
-main {
-}
+
 
 
 .content {
@@ -80,6 +88,7 @@ main {
 	margin-left: 15%;
 	margin-right: 15%;
 	min-height: 1000px;
+
 }
 
 .fot {
@@ -114,6 +123,7 @@ div.hard, div.soft {
 	border-radius: 20px 20px;
 }
 
+}
 #me {
 	text-decoration: underline;
 	text-decoration-color: floralwhite;
@@ -141,4 +151,34 @@ div.hard, div.soft {
 }
 .link-telegram:hover {
 	filter: invert(0);
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+@media screen and (max-width: 813px) {
+	div.hard, div.soft {
+	margin-left: 10px;
+	margin-top: 20px;
+	width: 90%;
+	padding-right: 15px;
+}
+div.hard {
+	border: none;
+	margin-right: 35px;
+	margin-bottom: 20px;
+}
+.hi {
+	line-height: 20px;
+}
+h1 {
+	line-height: 22px;
+}
 }
