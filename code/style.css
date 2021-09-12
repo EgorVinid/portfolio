@@ -18,7 +18,7 @@ dt {
 	margin: 10px;
 }
 
-ul.navv {
+ul {
 	list-style: none;
 }
 
@@ -27,7 +27,9 @@ li.navi {
 	margin-bottom: 20px;
   	padding-left: 20px;
 }
-
+ul.soft {
+	list-style: circle;
+}
 .row:after {
 	visibility: hidden;
 	display: block;
