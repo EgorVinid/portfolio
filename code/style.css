@@ -5,6 +5,7 @@ body {
 	background-size: 100%;
 	color: navajowhite;
 }
+
 html, body {
 	height: 100%;
 }
@@ -12,19 +13,19 @@ html, body {
 h1, .hi {
 	line-height: 10px;
 }
+
 dt {
-	margin: 10px;	
+	margin: 10px;
 }
-ul {
+
+ul.navv {
 	list-style: none;
 }
+
 li.navi {
 	border-left: 20px solid navajowhite;
 	margin-bottom: 20px;
-  padding-left: 20px;
-}
-ol {
-	list-style: upper-roman;
+  	padding-left: 20px;
 }
 
 .row:after {
@@ -35,15 +36,19 @@ ol {
 	clear: both;
 	height: 0;
 }
+
 .row {
 	display: inline-block;
 }
+
 * html .row {
 	height: 1%;
 }
+
 .row {
 	display: block;
 }
+
 .other-site {
 	font-size: 20px;
 }
@@ -53,19 +58,23 @@ a:visited {
 	text-decoration-color: white;
 	color: white;
 }
+
 a:link {
 	text-decoration: none;
 	color: rgb(220, 230, 245);
 }
+
 a:hover {
 	text-decoration: underline;
 	text-decoration-color: dimgrey;
 	color: blanchedalmond;
 }
+
 header {
 	border-radius: 50px 50px;
 	text-align:center;
 	border: 2px solid white;
+	box-shadow: 0px 0px 3px whitesmoke;
 	margin-bottom: 10px;
 	margin-top: 0;
 	overflow: hidden;
@@ -76,39 +85,32 @@ nav {
 	margin: 30px;
 	border: 2px dotted ghostwhite;
 	border-radius: 25px 25px;
-	
 }
-
-
-
 
 .content {
 	float: center;
 	margin-left: 15%;
 	margin-right: 15%;
 	min-height: 1000px;
-
 }
 
-.fot {
-	border-top: 2px solid white;
-	margin-top: 20px;
-	padding-top: 10px;
-}
 div.hard, div.soft {
 	float: left;
 	margin-left: 10px;
 	margin-top: 20px;
 	width: 48%;
 }
+
 .hard {
 	border-right: 2px solid papayawhip;
 	margin-bottom: 20px;
 }
+
 .spells {
 	border: 2px solid white;
 	border-radius: 20px 20px;
 }
+
 .about-me {
 	margin-top: 25px;
 	margin-left: 10px;
@@ -122,7 +124,6 @@ div.hard, div.soft {
 	border-radius: 20px 20px;
 }
 
-}
 #me {
 	text-decoration: underline;
 	text-decoration-color: floralwhite;
@@ -133,6 +134,9 @@ div.hard, div.soft {
 }
 
 .fot {
+	border-top: 2px solid white;
+	padding-top: 10px;
+	margin-top: 50px;
 	text-align: center;
 	color: white;
 }
@@ -148,6 +152,7 @@ div.hard, div.soft {
 .link-telegram {
 	filter: invert(1);
 }
+
 .link-telegram:hover {
 	filter: invert(0);
 }
@@ -163,21 +168,27 @@ main {
 }
 
 @media screen and (max-width: 813px) {
+
 	div.hard, div.soft {
-	margin-left: 10px;
-	margin-top: 20px;
-	width: 90%;
-	padding-right: 15px;
+		margin-left: 10px;
+		margin-top: 20px;
+		width: 90%;
+		padding-right: 15px;
+	}
+
+	div.hard {
+		border: none;
+		margin-right: 35px;
+		margin-bottom: 20px;
+	}
+
+	.hi {
+		line-height: 20px;
+	}
+
+	h1 {
+		line-height: 26px;
+	}
+
 }
-div.hard {
-	border: none;
-	margin-right: 35px;
-	margin-bottom: 20px;
-}
-.hi {
-	line-height: 20px;
-}
-h1 {
-	line-height: 26px;
-}
-}
+
