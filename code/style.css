@@ -1,7 +1,8 @@
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 16px;
-	background-image: url("../img/Deep-space.jpg");
+	/*background-image: url("../img/Deep-space.jpg");*/
+	background-color: black;
 	background-size: 100%;
 	color: navajowhite;
 }
@@ -23,7 +24,7 @@ ul {
 }
 
 li.navi {
-	border-left: 20px solid navajowhite;
+	border-left: 25px solid navajowhite;
 	margin-bottom: 20px;
   	padding-left: 20px;
 }
@@ -34,8 +35,12 @@ ul.soft, li.soft {
 
 li.soft {
 	margin-bottom: 10px;
+	margin-left: 0px;
 }
-
+ul.soft {
+	padding-left: 20px;
+	margin-left: 0px;
+}
 .row:after {
 	visibility: hidden;
 	display: block;
@@ -91,6 +96,7 @@ header {
 nav {
 	padding-left: 10px;
 	margin: 30px;
+	margin-bottom: 70px;
 	border: 2px dotted ghostwhite;
 	border-radius: 25px 25px;
 }
@@ -127,12 +133,14 @@ div.hard {
 	margin-top: 25px;
 	margin-left: 10px;
 	padding-left: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 70px;
 	border-bottom: 2px solid whitesmoke;
+	border-top: 2px solid whitesmoke;
+	text-align: justify;
 }
 
 .portfolio {
-	margin-top: 30px;
+	margin-top: 70px;
 	padding-left: 10px;
 	border: 4px double floralwhite;
 	border-radius: 20px 20px;
@@ -150,7 +158,7 @@ div.hard {
 	border-top: 2px solid white;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	margin-top: 50px;
+	margin-top: 70px;
 	text-align: center;
 	color: white;
 }
@@ -186,6 +194,7 @@ dt {
 }
 
 dd {
+	padding-right: 10px;
 	margin-bottom: 10px;
 }
 p.watch {
