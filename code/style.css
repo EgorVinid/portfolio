@@ -218,5 +218,11 @@ p.watch {
 		line-height: 26px;
 	}
 
+	.content {
+		float: center;
+		margin-left: 3%;
+		margin-right: 3%;
+		min-height: 1000px;
+	}
 }
 
