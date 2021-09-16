@@ -152,8 +152,13 @@ div.hard {
 
 .labels {
 	text-shadow: 1px 1px 3px white;
+	transition: 1s;
 }
 
+.labels:hover {
+	font-size: 36px;
+	text-shadow: 1px 1px 3px blue;
+}
 .fot {
 	border-top: 2px solid white;
 	padding-top: 10px;
@@ -205,6 +210,13 @@ p.watch {
 
 .contacts {
 	display: inline;
+}
+nav ul a, dt a {
+	transition: 1s;
+	font-size: 16px;
+}
+nav ul a:hover, dt a:hover {
+	font-size: 20px;
 }
 @media screen and (max-width: 813px) {
 
