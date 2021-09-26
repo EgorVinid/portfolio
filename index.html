@@ -16,7 +16,7 @@
 	<main class="row">
 
 	<section class="content">
-		<nav>
+		<nav id="menu">
 			<h2 class="labels">Навигация</h2>
 			<ul clss="navv">
 				<li class="navi"><a href="#me">Обо мне</a></li>
@@ -45,7 +45,7 @@
 						<dd>Python - junior<br>C++, C# - на начальном уровне</dd>
 					</dl>
 					<p>В данный момент я продолжаю обучение, поэтому вскоре этот раздел пополнится новыми навыками</p>
-					<p class="watch">(следите за обновлениями)</p>
+					<p class="watch"><a href="blog/blog.html">(следите за обновлениями здесь)</a></p>
 				</div>
 				<div class="soft" >
 					<h2 id="soft" class="labels">Soft Skills</h2>
@@ -74,11 +74,22 @@
 
 	<footer>
 		<div class="fot">
-			<h2 id="contacts" class="labels contacts">Контакты - </h2>
+			<h2 id="contacts" class="contacts">Контакты - </h2>
 			<a class="link-git" href="https://github.com/EgorVinid" target="_blank" title="Я на GitHub"><img class="git" src="src/github-logo.png" alt="" style="vertical-align: -10px;"></a>
 			<a class="link-telegram" href="https://t.me/walkinggg1" target="_blank" title="Я в Telegram"><img class="telegram" src="src/telegram-icon.png" alt="" style="vertical-align: -10px;"></a>
 		</div>
 	</footer>
 	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+ 		$(document).ready(function(){
+    		$("#menu").on("click","a", function (event) {
+        		event.preventDefault();
+        		var id  = $(this).attr('href'),
+            		top = $(id).offset().top;
+        		$('body,html').animate({scrollTop: top}, 1500);
+    		});
+		});
+</script>
 </body>
 </html>

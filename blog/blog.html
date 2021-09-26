@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="blog-style.css">
+	<link rel="shortcut icon" href="../src/check_mark.png" type="image/x-icon">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+		<h1 class="labels">Блог Егора Винидиктова</h1>
+		<p class="hi">Здесь я буду постить актуальную информацию о том, что я изучаю сейчас и как вообще у меня дела :)</p>
+		<p><a href="../index.html">На главную</a></p>
+	</header>
+	<main class="row">
+
+	<section class="content">
+		<nav id="menu">
+			<h2 class="labels">Навигация</h2>
+			<ul clss="navv">
+				<li class="navi"><a href="#start">Вводный пост</a></li>
+				<li class="navi"><a href="#october">Октябрь</a></li>
+				
+			</ul>
+		</nav>
+		<div id="start" class="start part">
+			<div><p>Итак, как мне пришла идея завести этот блог и для чего он мне вообще нужен</p>
+			<p>Идея пришла совершенно внезапно и, чтобы не забыть про неё я сразу начал её реализовывать</p>
+			<p>Писать я сюда буду о том, что новое я узнал о мире фронтенда, делиться полезными ссылками на разные фишки и, возможно, буду рассказывать что-то про себя, про свою жизнь и т.д.  т.п.</p></div>
+		</div>
+		<div id="october" class="october part">
+			<div class="1">
+				<div class="date">26 сентября 2021</div> 
+				
+				<p>Ну чтож, приступим. Структура будет такая: сначала делюсь информацией о том, что полезного сегодня узнал, а затем, возможно, может быть, не знаю ещё, рассказываю что-то о себе. В дальнейшем планирую подключить возможность оставлять коммаентарии, ставить лайки и т.д., а пока у нас диктатура и писать сюда могу только я. <br> Сегодня я наконец-то начал учить java-script, можете поздравить меня) <br> Пока изучил самые основные основы: структуру синтаксиса, способы объявления переменных и вывод данных в консоль.</p>
+				<p>Также нашёл <a href="https://gnatkovsky.com.ua/yakorya-i-plavnyj-perexod-po-yakornym-ssylkam.html" target="_blank">вот эту</a> классную статью и узнал, как сделать плавную прокрутку по якорям</p>
+			</div>
+			<div class="2">
+				<div class="date">27 сентября 2021</div>
+				<p>Второй пост</p>
+				</div>
+			<div class="3">Третий пост</div>
+			<div class="4">Четвёртый пост</div>
+		</div>
+	</section>
+
+	</main>
+
+	<footer>
+		<div class="fot">
+			<h2 id="contacts" class="contacts">Контакты - </h2>
+			<a class="link-git" href="https://github.com/EgorVinid" target="_blank" title="Я на GitHub"><img class="git" src="../src/github-logo.png" alt="" style="vertical-align: -10px;"></a>
+			<a class="link-telegram" href="https://t.me/walkinggg1" target="_blank" title="Я в Telegram"><img class="telegram" src="../src/telegram-icon.png" alt="" style="vertical-align: -10px;"></a>
+		</div>
+	</footer>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+ 		$(document).ready(function(){
+    		$("#menu").on("click","a", function (event) {
+        		event.preventDefault();
+        		var id  = $(this).attr('href'),
+            		top = $(id).offset().top;
+        		$('body,html').animate({scrollTop: top}, 1500);
+    		});
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+	/*background-image: url("../img/Deep-space.jpg");*/
+	background-color: black;
+	background-size: 100%;
+	color: navajowhite;
+}
+
+html, body {
+	height: 100%;
+}
+
+.row:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.row {
+	display: inline-block;
+}
+
+* html .row {
+	height: 1%;
+}
+
+.row {
+	display: block;
+}
+
+
+header {
+	border-radius: 50px 50px;
+	text-align:center;
+	border: 2px solid white;
+	box-shadow: 0px 0px 3px whitesmoke;
+	margin-bottom: 10px;
+	margin-top: 0;
+	overflow: hidden;
+}
+
+nav {
+	padding-left: 10px;
+	margin: 30px;
+	margin-bottom: 70px;
+	border: 2px dotted ghostwhite;
+	border-radius: 25px 25px;
+}
+
+.content {
+	float: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	min-height: 1000px;
+}
+
+
+.part div {
+	border-bottom: 1px dotted ghostwhite;
+	padding: 20px;
+	margin: 0px 15px 25px 15px;
+}
+
+
+
+.labels {
+	text-shadow: 1px 1px 3px white;
+	transition: 1s;
+}
+
+.labels:hover {
+	font-size: 36px;
+	text-shadow: 1px 1px 3px blue;
+}
+.fot {
+	border-top: 2px solid white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 70px;
+	text-align: center;
+	color: white;
+}
+
+.link-git {
+	filter: invert(0.8);
+	
+}
+.link-git:hover {
+	filter: invert(0.0);
+
+}
+
+.link-telegram {
+	filter: invert(0.2);
+}
+
+.link-telegram:hover {
+	filter: invert(1);
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+
+.contacts {
+	text-shadow: 1px 1px 3px white;
+	display: inline;
+}
+
+.part {
+	border: 1px solid navajowhite;
+	border-radius: 10px 10px;
+	margin-bottom: 70px;
+}
+
+.start div {
+	border: none;
+}
+
+div.date {
+	border: none;
+	text-decoration: underline;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+a {
+	color: navajowhite;
+	text-decoration: none;
+}
+
+a:hover {
+	color: floralwhite;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: floralwhite;
+	text-decoration: underline;
+}
+@media screen and (max-width: 813px) {
+
+
+	.hi {
+		line-height: 20px;
+	}
+
+	h1 {
+		line-height: 26px;
+	}
+
+	.content {
+		float: center;
+		margin-left: 3%;
+		margin-right: 3%;
+		min-height: 1000px;
+	}
+}
+
+@media screen and (max-width: 1164px) {
+	
+	}
+
