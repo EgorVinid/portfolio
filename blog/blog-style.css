@@ -59,7 +59,7 @@ nav {
 }
 
 
-.part div {
+.part article {
 	border-bottom: 1px dotted ghostwhite;
 	padding: 20px;
 	margin: 0px 15px 25px 15px;
@@ -124,8 +124,12 @@ main {
 	margin-bottom: 70px;
 }
 
-.start div {
+section.start div {
 	border: none;
+}
+
+.start {
+	padding-left: 15px;
 }
 
 div.date {
@@ -148,6 +152,9 @@ a:hover {
 a:visited {
 	color: floralwhite;
 	text-decoration: underline;
+}
+section article.post1 {
+	border: none;
 }
 @media screen and (max-width: 813px) {
 

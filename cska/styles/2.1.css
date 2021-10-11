@@ -56,8 +56,26 @@ table.roster tfoot td {
 	background-color: rgba(222, 31, 218, 0.5);
 }
 nav {
-width: 150px; 
-margin: 10px 30px 10px 0px; 
-padding: 10px; 
-border: black medium double; 
-border-radius: 10px; 
+	 
+	padding-top: 20px; 
+}
+
+nav div {
+	margin-bottom: 10px;
+}
+
+
+details {
+	margin-top: 20px;
+	border: 1px solid black;
+	margin-left: 100px;
+	display: inline-block;
+	border-radius: 25px 25px;
+	padding: 15px;
+}
+
+details p {
+	margin: 10px;
+	padding: 10px 10px 0px 10px;
+	border-bottom: 1px solid black;
+}
